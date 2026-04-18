@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AL BAKE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url("https://images.unsplash.com/photo-1606755962773-d324e0a13086") no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* CARD SECTION */
+        .section {
+            background: #0f172a;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* GRID (like news section) */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 20px;
+            background: #020617;
+        }
+
+        .grid-item {
+            position: relative;
+        }
+
+        .grid-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .grid-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>AL BAKE</h1>
+            <p>Hot. Crispy. Addictive street food experience.</p>
+        </div>
+    </div>
+
+    <!-- CARD SECTION -->
+    <div class="section">
+
+        <div class="card">
+            <h2>🔥 Popular Combos</h2>
+            <p>Best-selling meals loved by everyone.</p>
+
+            <div class="btn">View Menu</div>
+            <div class="btn">Order Now</div>
+        </div>
+
+    </div>
+
+    <!-- GRID (NEWS STYLE) -->
+    <div class="grid">
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92">
+            <div class="grid-text">Crispy Fried Chicken</div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+            <div class="grid-text">Juicy Burger</div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+            <div class="grid-text">Loaded Shawarma</div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b">
+            <div class="grid-text">Combo Meals</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AL BAKE</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: #020617;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url("https://images.unsplash.com/photo-1606755962773-d324e0a13086") no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin: 0;
+        }
+
+        .hero p {
+            opacity: 0.8;
+        }
+
+        /* GLASS CARD */
+        .section {
+            padding: 40px 20px;
+        }
+
+        .card {
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            background: #ff3c00;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff1e00;
+            transform: scale(1.05);
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            transition: 0.4s;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .grid-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            width: 100%;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>🔥 AL BAKE</h1>
+            <p>Next-level street food experience.</p>
+        </div>
+    </div>
+
+    <!-- GLASS CARD -->
+    <div class="section">
+        <div class="card">
+            <h2>🔥 Popular Combos</h2>
+            <p>Try our most loved meals.</p>
+
+            <div class="btn">View Menu</div>
+            <div class="btn">Order Now</div>
+        </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92">
+            <div class="grid-text">Fried Chicken</div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+            <div class="grid-text">Burger</div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+            <div class="grid-text">Shawarma</div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b">
+            <div class="grid-text">Combo Meals</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
